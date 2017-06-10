@@ -66,7 +66,8 @@ class NVActivityIndicatorTypeTests: XCTestCase {
             .audioEqualizer: NVActivityIndicatorAnimationAudioEqualizer.self,
         ]
 
-        enumClass.forEach { enumm, clazz in
+        enumClass.forEach {
+            let (enumm, clazz) = $0
             let enummClassString = String(describing: enumm.animation())
             let clazzString = String(describing: clazz)
 
